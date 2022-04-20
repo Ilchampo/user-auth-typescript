@@ -13,6 +13,7 @@ export interface UserInterface extends Document {
 	password: string;
 	creationDate: Date;
 	lastSignOut: Date;
+	enable: boolean;
 	comparePassword: (password: string) => Promise<boolean>;
 }
 
